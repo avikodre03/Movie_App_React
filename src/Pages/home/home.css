@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+.carousel-root {
+
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-slider {
+
+    height: 100%;
+    width: 100%;
+}
+
+.posterImage {
+    height: 500px;
+
+
+}
+
+.posterImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.posterImage_overlay {
+    position: absolute;
+    padding: 1rem;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: rgba(255, 255, 255, 0.749);
+    background-image: linear-gradient(rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.5),
+            rgb(0, 0, 0, .8),
+            rgb(0, 0, 1));
+}
+
+.posterImage_overlay:hover {
+    cursor: pointer;
+    color: white;
+
+}
+
+.posterImage_title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: .5rem;
+    font-family: Roboto;
+
+    text-shadow: 2px 2px 3px red;
+}
+
+.posterImage_overlay .posterImage_release_date_rating {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.posterImage_overlay .posterImage_release_date_rating svg {
+    font-size: 1.8rem;
+    margin-right: .3rem;
+    padding-top: .3rem;
+}
+
+.posterImage_overlay .posterImage_release_date_rating span {
+    margin-left: 4rem;
+}
+
+.posterImage_overlay .posterImage_release_date_rating span svg {
+    font-size: 1.8rem;
+    margin-right: .3rem;
+    color: orange;
+    padding-top: .3rem;
+}
+
+.posterImageDescription {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    text-align: left;
+    width: 50%;
+}
