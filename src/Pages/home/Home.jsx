@@ -23,7 +23,7 @@ const Home = () => {
 
     return (
         <>
-            {console.log("allMovies home", allMovies)}
+            {/* {console.log("allMovies home", allMovies)} */}
             <div className='home'>
                 <div className="poster">
                     {/* {console.log("hee", context.popularMoviesFromApi)} */}
@@ -34,14 +34,16 @@ const Home = () => {
                         showStatus={false}
                     >
                         {
-                            context.popularMoviesFromApi.map((ele,idx) => {
+                            context.popularMoviesFromApi.map((ele) => {
                                 return (
                                     <>
-
+                                    
+                                    
                                         <Link to={`/movie/${ele.id}`}>
 
-                                            <div className="posterImage" key={idx}>
+                                            <div className="posterImage" >
                                                 <img src={`https://image.tmdb.org/t/p/original/${ele && ele.backdrop_path}`} alt="" />
+                                                {console.log("ele",ele)}
                                             </div>
                                             <div className="posterImage_overlay">
                                                 <div className="posterImage_title">{ele && ele.original_title}</div>
@@ -57,12 +59,14 @@ const Home = () => {
                                                     }
                                                 </div>
                                             </div>
-                                        </Link>
+                                      </Link>
+                            
                                     </>
                                 )
                             })
                         }
                     </Carousel>
+
                     <MovieList />
 
                 </div>

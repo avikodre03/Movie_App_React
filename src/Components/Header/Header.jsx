@@ -5,7 +5,7 @@ import { BiSearch } from 'react-icons/bi';
 import { searchMovies } from '../../Functions/getMoviesList';
 import { useContext } from 'react';
 import { globalData } from '../../App';
-
+import logo from '../../Assets/hollywood.png'
 const Header = () => {
   const context = useContext(globalData)
   console.log("con from header", context.setstate);
@@ -15,6 +15,9 @@ const Header = () => {
       <div className="header">
 
         <div className="headerLeft">
+        <div className="logo">
+  <img src={logo} alt="hollywood" />
+</div>
           <Link to="/" className='headerIcon'>
             Movie app
           </Link>
